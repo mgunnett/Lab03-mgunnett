@@ -31,7 +31,9 @@ public class MessageDialog {
 	public MessageDialog() {
 		initialize();
 		String text = "This is a message.";
-		JOptionPane.showMessageDialog(null, text);
+		String title = "Attention!";
+		int type = JOptionPane.PLAIN_MESSAGE;
+		JOptionPane.showMessageDialog(null, text, title, type);
 	}
 
 	/**
